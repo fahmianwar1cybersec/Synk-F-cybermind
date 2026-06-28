@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SYNK-F CyberMind</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>📊 Dashboard</h1>
+
+    <p>Welcome to SYNK-F CyberMind</p>
+
+    <div class="cards">
+
+        <a href="/quiz" class="card">
+            <h2>🎯 Quiz</h2>
+            <p>Test your Cybersecurity knowledge</p>
+        </a>
+
+        <a href="/phishing" class="card">
+            <h2>🎣 Phishing Demo</h2>
+            <p>Identify phishing attacks</p>
+        </a>
+
+        <a href="/ai-tutor" class="card">
+            <h2>🤖 AI Tutor</h2>
+            <p>Ask cybersecurity questions</p>
+        </a>
+
+    </div>
+
+    <br>
+
+    <a href="/" class="btn">🏠 Home</a>
+
+</div>
+
+</body>
+</html>

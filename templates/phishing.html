@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phishing Analyzer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <h1>🎣 AI Phishing Analyzer</h1>
+
+    <textarea id="phishing-input"
+    placeholder="Paste suspicious Email, SMS or URL here..."></textarea>
+
+    <br><br>
+
+    <button class="btn" onclick="analyzePhishing()">
+        Analyze
+    </button>
+
+    <br><br>
+
+    <div id="phishing-result" class="chat-box"></div>
+
+    <br>
+
+    <a href="/dashboard" class="btn">⬅️ Dashboard</a>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

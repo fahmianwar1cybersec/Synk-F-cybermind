@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Quiz</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="quiz-box">
+
+    <h1>📝 AI Cyber Quiz</h1>
+
+    <button class="btn" onclick="generateQuiz()">Generate Quiz</button>
+
+    <div id="quiz-container"></div>
+
+    <br>
+
+    <a href="/dashboard" class="btn">⬅️ Dashboard</a>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
